@@ -6,11 +6,11 @@ export default function Todos(props) {
     const [Todos, setListState] = useState(list);
     const [inputValue, setInput] = useState('');
 
-    const addList = () => {
+    const addList = () => {        
         listDisplayed.push(
-        <p key={Todos.length-1}>
+        <p key={Todos.length}>
             {Todos.length+1}) {inputValue}
-            <button onClick={ () => remove(`${Todos.length}`)}>Delete</button>
+            <button onClick={ () => `${remove(Todos.length)}` }>Delete</button>
         </p>
         );
         setListState(list => [...list, inputValue]);
@@ -20,9 +20,9 @@ export default function Todos(props) {
 
     const remove = (key) => {
         console.log(key);
-        listDisplayed.splice[key,1];
-        [list.splice[key,1]]
-        setListState(listDisplayed);
+        listDisplayed.splice(key,1);
+        [list.splice(key,1)]
+        setListState(list)
     }
 
     const changeInput = e => {
