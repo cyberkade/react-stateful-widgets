@@ -13,7 +13,7 @@ render(
     <Counter />
     <Moods />
     <Spinner />
-    <Input />
+    <Input/>
     <Squares />
     <Programmers />
   </>
