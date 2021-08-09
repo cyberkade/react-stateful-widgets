@@ -59,7 +59,7 @@ export default function Counter(props) {
     return setCount(count - 1);
   };
   const reset = () => {
-    /* STEP 6 */
+    return setCount(0);
   };
 
   const style = {
